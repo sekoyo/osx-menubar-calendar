@@ -19,7 +19,7 @@
 		DE0D07851C7DFB39002DF47E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DE0D07861C7DFB39002DF47E /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		DE0D07891C7DFEDB002DF47E /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
-		DE1F393A1C7DECC2000E1BE4 /* MenuCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1F393A1C7DECC2000E1BE4 /* MenubarCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenubarCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1F393D1C7DECC2000E1BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE1F393F1C7DECC2000E1BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE1F39421C7DECC2000E1BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		DE1F393B1C7DECC2000E1BE4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE1F393A1C7DECC2000E1BE4 /* MenuCalendar.app */,
+				DE1F393A1C7DECC2000E1BE4 /* MenubarCalendar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE1F39391C7DECC2000E1BE4 /* MenuCalendar */ = {
+		DE1F39391C7DECC2000E1BE4 /* MenubarCalendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE1F39471C7DECC2000E1BE4 /* Build configuration list for PBXNativeTarget "MenuCalendar" */;
+			buildConfigurationList = DE1F39471C7DECC2000E1BE4 /* Build configuration list for PBXNativeTarget "MenubarCalendar" */;
 			buildPhases = (
 				DE1F39361C7DECC2000E1BE4 /* Sources */,
 				DE1F39371C7DECC2000E1BE4 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = MenuCalendar;
+			name = MenubarCalendar;
 			productName = MenuCalendar;
-			productReference = DE1F393A1C7DECC2000E1BE4 /* MenuCalendar.app */;
+			productReference = DE1F393A1C7DECC2000E1BE4 /* MenubarCalendar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DE1F39351C7DECC2000E1BE4 /* Build configuration list for PBXProject "MenuCalendar" */;
+			buildConfigurationList = DE1F39351C7DECC2000E1BE4 /* Build configuration list for PBXProject "MenubarCalendar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE1F39391C7DECC2000E1BE4 /* MenuCalendar */,
+				DE1F39391C7DECC2000E1BE4 /* MenubarCalendar */,
 			);
 		};
 /* End PBXProject section */
@@ -245,8 +245,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MenuCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Sekai.MenuCalendar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Sekai.MenubarCalendar;
+				PRODUCT_NAME = MenubarCalendar;
 			};
 			name = Debug;
 		};
@@ -257,15 +257,15 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MenuCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Sekai.MenuCalendar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Sekai.MenubarCalendar;
+				PRODUCT_NAME = MenubarCalendar;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE1F39351C7DECC2000E1BE4 /* Build configuration list for PBXProject "MenuCalendar" */ = {
+		DE1F39351C7DECC2000E1BE4 /* Build configuration list for PBXProject "MenubarCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE1F39451C7DECC2000E1BE4 /* Debug */,
@@ -274,7 +274,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE1F39471C7DECC2000E1BE4 /* Build configuration list for PBXNativeTarget "MenuCalendar" */ = {
+		DE1F39471C7DECC2000E1BE4 /* Build configuration list for PBXNativeTarget "MenubarCalendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE1F39481C7DECC2000E1BE4 /* Debug */,

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MenuCalendar.xcodeproj">
+      location = "self:/Users/infensus/Projects/MenuCalendar/MenubarCalendar.xcodeproj">
    </FileRef>
 </Workspace>
