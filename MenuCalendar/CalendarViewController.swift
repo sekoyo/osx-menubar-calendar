@@ -12,11 +12,12 @@ class CalendarViewController: NSViewController {
     
     @IBOutlet weak var datePicker: NSDatePicker!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        datePicker.dateValue = NSDate()
-        
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
     
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        datePicker.dateValue = NSDate()
+    }
 }

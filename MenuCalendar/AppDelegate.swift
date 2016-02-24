@@ -19,11 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         if let button = statusItem.button {
-            let date = NSDate()
-            let formatter = NSDateFormatter()
-            formatter.dateFormat = "E d MMM, HH:mm"
-            
-            button.title =  formatter.stringFromDate(date)
+            button.title = getDateTimeStr()
             button.action = Selector("togglePopover:")
         }
         
@@ -35,6 +31,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
         eventMonitor?.start()
+        
+        // Loop every minute to update the time.
+        startMinuteLoop()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -56,6 +55,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             closePopover(sender)
         } else {
             showPopover(sender)
+        }
+    }
+    
+    func getDateTimeStr() -> String {
+        let date = NSDate()
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "E d MMM, HH:mm"
+        return formatter.stringFromDate(date)
+    }
+    
+    func startMinuteLoop() {
+        let currentDate = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "ss";
+        let currentTimeSeconds = Double(dateFormatter.stringFromDate(currentDate))
+        let fireDate = NSDate(timeIntervalSinceNow: 60 - currentTimeSeconds!)
+        
+        let timer = NSTimer(fireDate: fireDate, interval: 60, target: self, selector: "minuteLoop", userInfo: nil, repeats: true)
+        NSRunLoop.mainRunLoop().addTimer(timer, forMode: NSDefaultRunLoopMode)
+    }
+    
+    func minuteLoop() {
+        if let button = statusItem.button {
+            button.title = getDateTimeStr()
         }
     }
 

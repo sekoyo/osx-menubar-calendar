@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="CalendarViewController" customModule="MenuCalendar" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="CalendarViewController" customModule="MenubarCalendar" customModuleProvider="target">
             <connections>
                 <outlet property="datePicker" destination="CpB-1P-BH7" id="6fQ-sM-PIR"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="NwE-MO-Xje"/>
