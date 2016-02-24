@@ -40,7 +40,7 @@
 		DE1F39311C7DECC2000E1BE4 = {
 			isa = PBXGroup;
 			children = (
-				DE1F393C1C7DECC2000E1BE4 /* MenuCalendar */,
+				DE1F393C1C7DECC2000E1BE4 /* MenubarCalendar */,
 				DE1F393B1C7DECC2000E1BE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE1F393C1C7DECC2000E1BE4 /* MenuCalendar */ = {
+		DE1F393C1C7DECC2000E1BE4 /* MenubarCalendar */ = {
 			isa = PBXGroup;
 			children = (
 				DE1F393D1C7DECC2000E1BE4 /* AppDelegate.swift */,
@@ -64,6 +64,7 @@
 				DE1F39441C7DECC2000E1BE4 /* Info.plist */,
 				DE0D07891C7DFEDB002DF47E /* EventMonitor.swift */,
 			);
+			name = MenubarCalendar;
 			path = MenuCalendar;
 			sourceTree = "<group>";
 		};
