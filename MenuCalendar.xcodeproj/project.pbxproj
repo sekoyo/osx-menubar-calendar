@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0D07871C7DFB39002DF47E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D07851C7DFB39002DF47E /* CalendarViewController.swift */; };
+		DE0D07881C7DFB39002DF47E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE0D07861C7DFB39002DF47E /* CalendarViewController.xib */; };
+		DE0D078A1C7DFEDB002DF47E /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D07891C7DFEDB002DF47E /* EventMonitor.swift */; };
 		DE1F393E1C7DECC2000E1BE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F393D1C7DECC2000E1BE4 /* AppDelegate.swift */; };
 		DE1F39401C7DECC2000E1BE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1F393F1C7DECC2000E1BE4 /* Assets.xcassets */; };
 		DE1F39431C7DECC2000E1BE4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1F39411C7DECC2000E1BE4 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE0D07851C7DFB39002DF47E /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		DE0D07861C7DFB39002DF47E /* CalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		DE0D07891C7DFEDB002DF47E /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		DE1F393A1C7DECC2000E1BE4 /* MenuCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1F393D1C7DECC2000E1BE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE1F393F1C7DECC2000E1BE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,9 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				DE1F393D1C7DECC2000E1BE4 /* AppDelegate.swift */,
+				DE0D07851C7DFB39002DF47E /* CalendarViewController.swift */,
+				DE0D07861C7DFB39002DF47E /* CalendarViewController.xib */,
 				DE1F393F1C7DECC2000E1BE4 /* Assets.xcassets */,
 				DE1F39411C7DECC2000E1BE4 /* MainMenu.xib */,
 				DE1F39441C7DECC2000E1BE4 /* Info.plist */,
+				DE0D07891C7DFEDB002DF47E /* EventMonitor.swift */,
 			);
 			path = MenuCalendar;
 			sourceTree = "<group>";
@@ -118,6 +127,7 @@
 			files = (
 				DE1F39401C7DECC2000E1BE4 /* Assets.xcassets in Resources */,
 				DE1F39431C7DECC2000E1BE4 /* MainMenu.xib in Resources */,
+				DE0D07881C7DFB39002DF47E /* CalendarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0D078A1C7DFEDB002DF47E /* EventMonitor.swift in Sources */,
+				DE0D07871C7DFB39002DF47E /* CalendarViewController.swift in Sources */,
 				DE1F393E1C7DECC2000E1BE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +281,7 @@
 				DE1F39491C7DECC2000E1BE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
