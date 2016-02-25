@@ -21,6 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if let button = statusItem.button {
             button.title = getDateTimeStr()
             button.action = Selector("togglePopover:")
+            button.sendActionOn(Int(NSEventMask.LeftMouseUpMask.union(NSEventMask.RightMouseUpMask).rawValue))
         }
         
         popover.contentViewController = CalendarViewController(nibName: "CalendarViewController", bundle: nil)
@@ -41,7 +42,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func showPopover(sender: AnyObject?) {
-        if let button = statusItem.button {
+        let event:NSEvent! = NSApp.currentEvent!
+        if (event.type == NSEventType.RightMouseUp) {
+
+            let myPopup: NSAlert = NSAlert()
+            myPopup.messageText = "Quit"
+            myPopup.informativeText = "Are you sure you want to quit Menubar Calendar?"
+            myPopup.alertStyle = NSAlertStyle.WarningAlertStyle
+            myPopup.addButtonWithTitle("Quit")
+            myPopup.addButtonWithTitle("Cancel")
+            let res = myPopup.runModal()
+            if res == NSAlertFirstButtonReturn {
+                exit(0)
+            }
+
+        } else if let button = statusItem.button {
             popover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
         }
     }
@@ -57,7 +72,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             showPopover(sender)
         }
     }
-    
+
     func getDateTimeStr() -> String {
         let date = NSDate()
         let formatter = NSDateFormatter()
